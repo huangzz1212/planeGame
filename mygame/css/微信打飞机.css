@@ -1,0 +1,53 @@
+*{
+   margin: 0;
+   padding: 0;	
+}
+body{
+	/*第三种方式:在其父级设置 font-size: 0;*/
+	/*font-size: 0;*/
+}
+#mapCanvas{
+	/*border: 2px solid red;*/
+	/*第一种方式:*/
+	vertical-align: top;
+	/*第二种方式*/
+	/*display: block;*/
+}
+#loading{
+	position: absolute;
+	/*left top 相对于定位父标签而言*/
+	left: 50%;
+	top: 50%;
+	/*translate 平移 相对于自身而言*/
+	transform: translate(-50%,-50%);
+	text-align: center;
+	
+}
+#currentScore{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#menu{
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	border: 1px solid gray;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	list-style-type: none;
+	text-align: center;
+	background: gainsboro;
+	line-height: 55px;
+	font-size: 20px;
+	/*开始不显示*/
+	display: none;
+	border-radius: 10px;
+}
+#endScores{
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+
+
